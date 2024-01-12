@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order card</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        .container{
+
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+            display: flex;
+            justify-content: center;
+            align-items:center;
+           
+        }
+        .card{
+            width: 425px;
+            height: 650px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+        .card p{
+            text-align: center;
+            padding: 0px 20px;
+            font-size: large;
+        }
+        #amountbox{
+
+            width: 80%;
+            height: 10%;
+            background-color: antiquewhite;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .left{
+            padding-right: 15px;
+        }
+        .right{
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 12px;
+            align-items: center;
+            padding-left: 10px;
+
+        }
+
+        #paymentbutton{
+            width: 60%;
+            height: 9%;
+            background-color: #fad0c4;
+            color: hsl(252, 93%, 47%);
+            font-size: medium;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow:0px 0px 9px 2px black ;
+            border: 2px solid black;
+            transition: all 0.3s ease-in-out 0.2s;
+        }
+        #paymentbutton:hover{
+
+            transform: scale(1.1);
+            cursor:pointer;
+        }
+
+        .cancle{
+
+            font-weight: bolder;
+        }
+       .right .innerimg{
+
+            width: 50px;
+            border: 2px solid;
+            border-radius: 60%;
+            overflow: hidden;
+    
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://img.freepik.com/free-psd/happy-delivery-man-uniform-riding-motorcycle-with-bag-map-with-isolated-background-delivery-concept-3d-render-cartoon-character_1150-61955.jpg?w=900&t=st=1705046288~exp=1705046888~hmac=227cf7be8f54b150a5279c2e47e8c5feff3bb3d6fe5fbff2c06cbedee1b462ca" alt="not found">
+
+           
+            <h2>ORDER SUMMARY!</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, dolorum. Expedita dolorum nesciunt distinctio a totam commodi aliquam velit itaque! Animi explicabo doloremque minima perferendis.</p>
+
+            <div id="amountbox">
+                <div class="right">
+
+                    <div class="innerimg">
+                        <img   src="https://i.pinimg.com/564x/e9/b9/29/e9b929436e7e38e5199254b8722a089b.jpg "alt="not found">
+                    </div>
+
+                    <div class="firstright"> 
+                        <div>Annual Plane</div>
+                        <div>22.45$/Year</div>
+                    </div>
+
+                </div>
+
+                <div class="left">
+                    <a href="#">Change</a>
+
+                </div>
+
+            </div>
+
+            <button id="paymentbutton">
+                Proceed to payment!
+            </button>
+
+            <div class="cancle">
+                <a href="#"> Cancle order!!</a>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+</html>
