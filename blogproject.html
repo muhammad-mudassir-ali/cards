@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG PROJECT</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100%;
+            width: 100%;
+ 
+        }
+        .container{
+            max-width: 85vw; 
+            padding: 2rem 1rem;
+            margin: 0 auto;
+            
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        .headercontainer{
+              margin-bottom: 2.5rem;
+        }
+        .headertitle{
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            line-height: 2rem;
+            font-weight: 700;
+            text-align: center;
+        }
+        .headerdescription{
+            max-width: 568px;
+            text-align: center;
+            color: rgb(98, 87, 87);
+            margin: 0 auto;
+
+        }
+        .main{
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(4,1fr);
+
+        }
+        .cardcontainer{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            
+        }
+        .cardimgcontainer{
+
+            position: relative;
+            overflow: hidden;
+            height: 12rem;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            
+        }
+        .cardimg{
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            height:100%;
+            width: 100%;
+            
+
+        }
+        .card1titlecontainer{
+
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+        }
+        .cardcontainer:hover .cardimg{
+            transform: scale(1.1);
+            transition-duration: 200ms;
+        }
+        .cardcontainer:hover{
+            box-shadow: 0px 0px 7px 2px;
+            transition-duration: 200ms;
+        }
+        .cardtitle{
+            margin-bottom: 0.6rem;
+            font-size: 600;
+        }
+        .cardtitle:hover{
+            color: black;
+        }
+        .cardfooter{
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            padding-left: 16px;
+            padding-right: 28px;
+          
+        }
+        .avatar{
+            height: 30px;
+            width: 30px;
+            margin: 3px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .avatarimg{
+            height: 30px;
+            width: 30px;
+           
+        }
+        .author{
+            display: flex;
+            gap: 0.5rem;
+        }
+        .authorinfo{
+            display: flex;
+            flex-direction: column;
+        }
+        .nameanchor{
+            font-weight: 600;
+        }
+        .nameanchor:hover{
+            color: black;
+        }
+        .cardtag{
+            background-color: antiquewhite;
+            padding: 2px;
+            border: 2px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+          
+        }
+        .cardtag:hover{
+            transform: scale(1.1);
+            transition-duration: 200ms;
+            box-shadow: 0px 0px 8px 2px ;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="headercontainer">
+            <h1 class="headertitle">Coding Center</h1>
+            <p class="headerdescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aliquid unde asperiores ipsa nobis recusandae atque magni quisquam amet eos.</p>
+        </header>
+        <main class="main">
+
+            <div class="cardcontainer">
+                <a href="#" class="cardimgcontainer">
+                    <img src="https://img.freepik.com/free-vector/server-room-cloud-storage-icon-datacenter-database-concept-data-exchange-process_39422-556.jpg?w=900&t=st=1705241794~exp=1705242394~hmac=e71f9b0c2e10f3d72cfe394878a9ea2e356689e570085dc04798c5da44776150" alt="image not found!"  class="cardimg" loading="lazy">
+                </a>
+                <div class="card1titlecontainer">
+                    <a href="#">
+                        <h3 class="cardtitle">Coding Factory</h3>
+
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, nulla.</p>
+                </div>
+                <div class="cardfooter">
+                    <div class="author">
+    
+                        <div class="avatar">
+                            <img src="https://cdn.vectorstock.com/i/1000x1000/51/05/male-profile-avatar-with-brown-hair-vector-12055105.webp" alt="img not found!" loading="lazy" class="avatarimg">
+                        </div>
+                        <div class="authorinfo">
+                            <span>
+                                <a href="#" class="nameanchor">MR.ALi</a>
+    
+                            </span>
+                            <span>
+                                june 20,2020
+    
+                            </span>
+                        </div>
+    
+                    </div>
+                    <div class="cardtag">
+                        <span>
+                            Technology
+                        </span>
+    
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardcontainer">
+                <a href="#" class="cardimgcontainer">
+                    <img src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?w=900&t=st=1705241423~exp=1705242023~hmac=48c8a8ecd1ebed62ee25535d78c1ddb410bebb6c04e6df506b1f4aef0faf5ecf" alt="image not found!"  class="cardimg" loading="lazy">
+                </a>
+                <div class="card1titlecontainer">
+                    <a href="#">
+                        <h3 class="cardtitle">Coding Factory</h3>
+
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, nulla.</p>
+                </div>
+                <div class="cardfooter">
+                    <div class="author">
+    
+                        <div class="avatar">
+                            <img src="https://cdn.vectorstock.com/i/1000x1000/51/05/male-profile-avatar-with-brown-hair-vector-12055105.webp" alt="img not found!" loading="lazy" class="avatarimg">
+                        </div>
+                        <div class="authorinfo">
+                            <span>
+                                <a href="#" class="nameanchor">MR.ALi</a>
+    
+                            </span>
+                            <span>
+                                june 20,2020
+    
+                            </span>
+                        </div>
+    
+                    </div>
+                    <div class="cardtag">
+                        <span>
+                            Technology
+                        </span>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="cardcontainer">
+                <a href="#" class="cardimgcontainer">
+                    <img src="https://img.freepik.com/free-vector/concept-smart-urban-city-with-server-room-database-icons-data-center-database_39422-628.jpg?w=996&t=st=1705241482~exp=1705242082~hmac=941b6cd82914d94a75485c78b1f81e9c00525cd2ecaab6c7ff2d3d00115526b6" alt="image not found!"  class="cardimg" loading="lazy">
+                </a>
+                <div class="card1titlecontainer">
+                    <a href="#">
+                        <h3 class="cardtitle">Coding Factory</h3>
+
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, nulla.</p>
+                </div>
+                <div class="cardfooter">
+                    <div class="author">
+    
+                        <div class="avatar">
+                            <img src="https://cdn.vectorstock.com/i/1000x1000/51/05/male-profile-avatar-with-brown-hair-vector-12055105.webp" alt="img not found!" loading="lazy" class="avatarimg">
+                        </div>
+                        <div class="authorinfo">
+                            <span>
+                                <a href="#" class="nameanchor">MR.ALi</a>
+    
+                            </span>
+                            <span>
+                                june 20,2020
+    
+                            </span>
+                        </div>
+    
+                    </div>
+                    <div class="cardtag">
+                        <span>
+                            Technology
+                        </span>
+    
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardcontainer">
+                <a href="#" class="cardimgcontainer">
+                    <img src="https://img.freepik.com/free-vector/online-education-icon-learning-courses-laptop-with-electronic-book-concept_39422-668.jpg?w=900&t=st=1705241544~exp=1705242144~hmac=cf8e6c4bc37e8915a7d0718bac72b97ff5bd91b5bd82c9df0585b2f062a681bd" alt="image not found!"  class="cardimg" loading="lazy">
+                </a>
+                <div class="card1titlecontainer">
+                    <a href="#">
+                        <h3 class="cardtitle">Coding Factory</h3>
+
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, nulla.</p>
+                </div>
+                <div class="cardfooter">
+                    <div class="author">
+    
+                        <div class="avatar">
+                            <img src="https://cdn.vectorstock.com/i/1000x1000/51/05/male-profile-avatar-with-brown-hair-vector-12055105.webp" alt="img not found!" loading="lazy" class="avatarimg">
+                        </div>
+                        <div class="authorinfo">
+                            <span>
+                                <a href="#" class="nameanchor">MR.ALi</a>
+    
+                            </span>
+                            <span>
+                                june 20,2020
+    
+                            </span>
+                        </div>
+    
+                    </div>
+                    <div class="cardtag">
+                        <span>
+                            Technology
+                        </span>
+    
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardcontainer">
+                <a href="#" class="cardimgcontainer">
+                    <img src="https://img.freepik.com/free-vector/data-processing-isometric-icon-business-analytics-statistics-magnifying-glass_39422-974.jpg?w=900&t=st=1705241584~exp=1705242184~hmac=c2278eb2d1c0db1d49c2e24db3c0554a44fe06c54a896251db12ec4e81cda866" alt="image not found!"  class="cardimg" loading="lazy">
+                </a>
+                <div class="card1titlecontainer">
+                    <a href="#">
+                        <h3 class="cardtitle">Coding Factory</h3>
+
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, nulla.</p>
+                </div>
+                <div class="cardfooter">
+                    <div class="author">
+    
+                        <div class="avatar">
+                            <img src="https://cdn.vectorstock.com/i/1000x1000/51/05/male-profile-avatar-with-brown-hair-vector-12055105.webp" alt="img not found!" loading="lazy" class="avatarimg">
+                        </div>
+                        <div class="authorinfo">
+                            <span>
+                                <a href="#" class="nameanchor">MR.ALi</a>
+    
+                            </span>
+                            <span>
+                                june 20,2020
+    
+                            </span>
+                        </div>
+    
+                    </div>
+                    <div class="cardtag">
+                        <span>
+                            Technology
+                        </span>
+    
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardcontainer">
+                <a href="#" class="cardimgcontainer">
+                    <img src="https://img.freepik.com/free-vector/abstract-banner-data-visualization-big-data-processing-cloud-storage-server-hosting_39422-978.jpg?w=900&t=st=1705241642~exp=1705242242~hmac=e07caaabb99aeb30d029f00b58b481a685fb54201e40ccfd2592daad160d47f7" alt="image not found!"  class="cardimg" loading="lazy">
+                </a>
+                <div class="card1titlecontainer">
+                    <a href="#">
+                        <h3 class="cardtitle">Coding Factory</h3>
+
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, nulla.</p>
+                </div>
+                <div class="cardfooter">
+                    <div class="author">
+    
+                        <div class="avatar">
+                            <img src="https://cdn.vectorstock.com/i/1000x1000/51/05/male-profile-avatar-with-brown-hair-vector-12055105.webp" alt="img not found!" loading="lazy" class="avatarimg">
+                        </div>
+                        <div class="authorinfo">
+                            <span>
+                                <a href="#" class="nameanchor">MR.ALi</a>
+    
+                            </span>
+                            <span>
+                                june 20,2020
+    
+                            </span>
+                        </div>
+    
+                    </div>
+                    <div class="cardtag">
+                        <span>
+                            Technology
+                        </span>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="cardcontainer">
+                <a href="#" class="cardimgcontainer">
+                    <img src="https://img.freepik.com/free-vector/future-interface-control-panel-hand-holographic-display-big-data-processing-building-user_39422-979.jpg?w=900&t=st=1705241683~exp=1705242283~hmac=81c19417838278e3868249e09f4357659df27b2f22be4536ab0ab64c6f9755a6" alt="image not found!"  class="cardimg" loading="lazy">
+                </a>
+                <div class="card1titlecontainer">
+                    <a href="#">
+                        <h3 class="cardtitle">Coding Factory</h3>
+
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, nulla.</p>
+                </div>
+                <div class="cardfooter">
+                    <div class="author">
+    
+                        <div class="avatar">
+                            <img src="https://cdn.vectorstock.com/i/1000x1000/51/05/male-profile-avatar-with-brown-hair-vector-12055105.webp" alt="img not found!" loading="lazy" class="avatarimg">
+                        </div>
+                        <div class="authorinfo">
+                            <span>
+                                <a href="#" class="nameanchor">MR.ALi</a>
+    
+                            </span>
+                            <span>
+                                june 20,2020
+    
+                            </span>
+                        </div>
+    
+                    </div>
+                    <div class="cardtag">
+                        <span>
+                            Technology
+                        </span>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="cardcontainer">
+                <a href="#" class="cardimgcontainer">
+                    <img src="https://img.freepik.com/free-vector/set-server-room-icons-3d-database-datacenter-concept-lighting-technology-object_39422-797.jpg?w=1060&t=st=1705241842~exp=1705242442~hmac=bb2528081ac38f0522257d0b12c139d08aceab0987bee439a1bee16e901cdb89" alt="image not found!"  class="cardimg" loading="lazy">
+                </a>
+                <div class="card1titlecontainer">
+                    <a href="#">
+                        <h3 class="cardtitle">Coding Factory</h3>
+
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, nulla.</p>
+                </div>
+                <div class="cardfooter">
+                    <div class="author">
+    
+                        <div class="avatar">
+                            <img src="https://cdn.vectorstock.com/i/1000x1000/51/05/male-profile-avatar-with-brown-hair-vector-12055105.webp" alt="img not found!" loading="lazy" class="avatarimg">
+                        </div>
+                        <div class="authorinfo">
+                            <span>
+                                <a href="#" class="nameanchor">MR.ALi</a>
+    
+                            </span>
+                            <span>
+                                june 20,2020
+    
+                            </span>
+                        </div>
+    
+                    </div>
+                    <div class="cardtag">
+                        <span>
+                            Technology
+                        </span>
+    
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+
+    </div>
+</body>
+</html>
